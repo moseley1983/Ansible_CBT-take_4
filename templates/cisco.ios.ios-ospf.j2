@@ -1,0 +1,10 @@
+router ospf 1
+ router-id {{ ospf.rid }}
+{% for ntwk in ospf.networks %}
+ network {{ ntwk.network }} {{ ntwk.mask }} area {{ ntwk.area }}
+{% endfor %}
+{% if ospf.default == true %}
+ default-information originate
+{% endif %}
+
+

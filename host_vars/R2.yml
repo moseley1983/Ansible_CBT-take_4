@@ -1,0 +1,18 @@
+---
+
+ospf:
+  rid: 2.2.2.2
+  default: false
+  networks:
+    - network: 10.1.2.0
+      mask: 0.0.0.3
+      area: 0
+    - network: 10.2.3.0
+      mask: 0.0.0.3    
+      area: 0 
+    - network: 10.2.4.0
+      mask: 0.0.0.3    
+      area: 0 
+
+
+  
